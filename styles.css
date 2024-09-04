@@ -22,7 +22,7 @@ p {
     margin: 0.5em 0;
 }
 
-/* Menu de Navegação */
+/* Menu de Navegação 
 nav {
     background-color: #ff6b6b;
     padding: 15px 0;
@@ -32,7 +32,18 @@ nav {
     z-index: 1000;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
-
+*/
+nav {
+    background-color: #ff6b6b;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Espaça a logo e o menu */
+    padding: 15px 10px; /* Espaçamento ao redor da logo e do menu */
+}
 nav ul {
     list-style-type: none;
     margin: 0;
@@ -56,21 +67,21 @@ nav ul li a:hover {
     color: #ffe5e5;
 }
 
-/* Hero Section 
-.hero {
-    background-image: url('./img/Leonardo_Phoenix_A_serene_and_vibrant_green_field_stretches_ac_0.jpg');
-    background-size: cover;
-    background-position: center;
-    padding: 100px 0px;
-    text-align: center;
-    color: #000000;
-}*/
+nav .logo img {
+    height: 50px; /* Altura da logo */
+    /*width: auto;  Mantém a proporção da imagem */
+    width: 200px;
+    vertical-align: middle; /* Alinha verticalmente no meio do menu */
+    border-radius: 5px;
+}
+
 .hero {
     position: relative;
     text-align: center;
     color: #fff; /* Cor do texto */
     padding: 150px 0px;
     background: url('./img/Leonardo_Phoenix_A_serene_and_vibrant_green_field_stretches_ac_0.jpg') no-repeat center center/cover;
+    /*background: url('./img/logo_pet.jpg') no-repeat center center/cover;*/
 }
 .hero::before {
     content: "";
