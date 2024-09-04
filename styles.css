@@ -1,0 +1,272 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    
+    box-sizing: border-box;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+h1, h2, h3 {
+    margin: 0.5em 0;
+}
+
+p {
+    margin: 0.5em 0;
+}
+
+/* Menu de Navegação */
+nav {
+    background-color: #ff6b6b;
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    font-size: 1.1em;
+    text-transform: uppercase;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffe5e5;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('dog-walking.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0px;
+    text-align: center;
+    color: #000000;
+}
+
+.hero-content {
+    max-width: 600px;
+    margin: auto;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.cta-buttons .btn {
+    background-color: #ff6b6b;
+    padding: 15px 30px;
+    border-radius: 5px;
+    margin: 10px;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+.cta-buttons .btn:hover {
+    background-color: #ff3b3b;
+}
+
+
+
+/* How It Works Section */
+.how-it-works {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+.steps {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.step {
+    flex: 1 1 300px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.step h3 {
+    color: #ff6b6b;
+}
+
+/* Benefits Section */
+.benefits {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.benefits-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.benefit {
+    flex: 1 1 300px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Parceria com Petshops Section */
+.petshop-partnership {
+    padding: 50px 20px;
+    background-color: #eaf7f7;
+    text-align: center;
+}
+
+.partnership-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.partnership-text {
+    flex: 1 1 400px;
+    margin: 20px;
+    text-align: left;
+}
+
+.partnership-image {
+    flex: 1 1 400px;
+    margin: 20px;
+    /*image-resolution: ;*/
+}
+
+.partnership-image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.partnership-text ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.partnership-text ul li {
+    margin-bottom: 10px;
+}
+
+
+/* Testimonials Section */
+.testimonials {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+.testimonial-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.testimonial {
+    flex: 1 1 300px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Pricing Section */
+.pricing {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.pricing-table {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.pricing-option {
+    flex: 1 1 300px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Call to Action Section */
+.cta-final {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #ff6b6b;
+    color: #fff;
+}
+
+.cta-final .btn {
+    background-color: #fff;
+    color: #ff6b6b;
+    padding: 15px 30px;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-size: 1em;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.cta-final .btn:hover {
+    background-color: #ff3b3b;
+    color: #fff;
+}
+
+/* Footer */
+footer {
+    padding: 20px;
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+}
+
+.footer-content a {
+    color: #fff;
+    margin: 0 10px;
+}
+
+.social-media {
+    margin-top: 10px;
+}
+
+.social-media img {
+    width: 30px;
+    margin: 0 10px;
+}
